@@ -1,4 +1,3 @@
-<pre><code>
 #! /bin/bash
 apt-get update -y
 apt-get upgrade -y
@@ -24,4 +23,3 @@ iptables -I FORWARD -p tcp --tcp-flags SYN,RST SYN -s 172.20.1.0/24 -j TCPMSS  -
 service iptables-persistent save
 iptables-save >> iptables
 EOF
-</code></pre>

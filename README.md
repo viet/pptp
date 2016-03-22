@@ -2,10 +2,10 @@ This guide will show you how to install a pptp VPN server on Debian 8
 ```shell
 #! /bin/bash
 apt-get update -y
+DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade
 apt-get upgrade -y
 apt-get install pptpd -y
 apt-get install curl -y
-pptpd -v
 apt-get update -y
 apt-get upgrade -y
 update-rc.d pptpd defaults

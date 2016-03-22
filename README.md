@@ -1,5 +1,5 @@
 This guide will show you how to install a pptp VPN server on Debian 8
-```javascript
+```shell
 #! /bin/bash
 apt-get update -y
 apt-get upgrade -y
